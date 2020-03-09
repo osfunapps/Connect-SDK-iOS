@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -1629,6 +1629,7 @@
 				EA5FB799199AEC2E0057B4B4 /* Connect SDK */,
 				EA61EB1218FE485B00D75696 /* Frameworks */,
 				EA61EB1118FE485B00D75696 /* Products */,
+				F456EA61241693600067A427 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1657,6 +1658,15 @@
 				EA41388A18FE51A9002CB005 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F456EA61241693600067A427 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				44E98F5E1B1E63570043BC70 /* OHHTTPStubs.framework */,
+				44E98F5D1B1E63570043BC70 /* OCMock.framework */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1889,10 +1899,11 @@
 				};
 			};
 			buildConfigurationList = EA61EB0B18FE485B00D75696 /* Build configuration list for PBXProject "ConnectSDK" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = EA61EB0718FE485B00D75696;
@@ -2221,7 +2232,11 @@
 				);
 				INFOPLIST_FILE = core/ConnectSDKAcceptanceTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2253,7 +2268,11 @@
 				GCC_PREFIX_HEADER = "core/ConnectSDKIntegrationTests/ConnectSDKIntegrationTests-Prefix.pch";
 				INFOPLIST_FILE = core/ConnectSDKAcceptanceTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2286,7 +2305,11 @@
 				);
 				INFOPLIST_FILE = core/ConnectSDKTests/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2315,7 +2338,11 @@
 				GCC_PREFIX_HEADER = "core/ConnectSDKTests/ConnectSDKTests-Prefix.pch";
 				INFOPLIST_FILE = core/ConnectSDKTests/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2350,7 +2377,11 @@
 				);
 				INFOPLIST_FILE = core/ConnectSDKIntegrationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2382,7 +2413,11 @@
 				GCC_PREFIX_HEADER = "core/ConnectSDKIntegrationTests/ConnectSDKIntegrationTests-Prefix.pch";
 				INFOPLIST_FILE = core/ConnectSDKIntegrationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
