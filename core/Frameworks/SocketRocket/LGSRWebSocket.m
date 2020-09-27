@@ -1678,7 +1678,7 @@ static const size_t LGSRFrameHeaderOverhead = 32;
             
     }
     
-    if (_secure && !_pinnedCertFound && (eventCode == NSStreamEventHasBytesAvailable || eventCode == NSStreamEventHasSpaceAvailable)) {
+     if (_secure && !_pinnedCertFound && (eventCode == NSStreamEventHasBytesAvailable || eventCode == NSStreamEventHasSpaceAvailable)) {
         
         NSArray *sslCerts = [_urlRequest LGSR_SSLPinnedCertificates];
         if (sslCerts) {
