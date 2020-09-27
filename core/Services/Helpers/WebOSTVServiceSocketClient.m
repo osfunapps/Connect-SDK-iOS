@@ -336,10 +336,22 @@
 
     [_activeConnections setObject:reg forKey:[self connectionKeyForMessageId:@(dataId)]];
 
-    NSDictionary *registerInfo = @{
+    NSDictionary *registerInfo;
+    
+    NSString *lastClientKey = self.service.webOSTVServiceConfig.clientKey;
+    
+    if (lastClientKey != nil) {
+        registerInfo = @{
+            @"manifest" : self.manifest,
+            @"pairingType" : [self pairingTypeToString:self.service.pairingType],
+            @"client-key": lastClientKey
+        };
+    } else {
+        registerInfo = @{
             @"manifest" : self.manifest,
             @"pairingType" : [self pairingTypeToString:self.service.pairingType]
-    };
+        };
+    }
 
     NSString *sendString = [self encodeData:registerInfo andAddress:nil withId:dataId];
 
