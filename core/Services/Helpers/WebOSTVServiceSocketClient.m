@@ -441,7 +441,7 @@
         self.service.webOSTVServiceConfig.SSLCertificates = nil;
         self.service.webOSTVServiceConfig.clientKey = nil;
 
-        shouldRetry = YES;
+        // shouldRetry = YES;
     } else
         intError = [ConnectError generateErrorWithCode:ConnectStatusCodeSocketError andDetails:error.localizedDescription];
 
