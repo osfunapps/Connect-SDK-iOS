@@ -56,6 +56,10 @@
 - (void) backWithSuccess:(SuccessBlock)success failure:(FailureBlock)failure;
 - (void) homeWithSuccess:(SuccessBlock)success failure:(FailureBlock)failure;
 
+// osApps added!
+- (void) selectWithSuccess:(SuccessBlock)success failure:(FailureBlock)failure;
+- (void) mouseTapWithSuccess:(SuccessBlock)success failure:(FailureBlock)failure;
+
 - (void) sendKeyCode:(NSUInteger)keyCode success:(SuccessBlock)success failure:(FailureBlock)failure;
 
 @end
