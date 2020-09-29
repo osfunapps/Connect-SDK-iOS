@@ -112,6 +112,7 @@
     [self sendPackage:clickString];
 }
 
+// osApps changed!
 -(void) button:(WebOSTVMouseButton)keyName
 {
     NSString *keyString;
@@ -124,6 +125,7 @@
         case WebOSTVMouseButtonDown: keyString = @"DOWN"; break;
         case WebOSTVMouseButtonLeft: keyString = @"LEFT"; break;
         case WebOSTVMouseButtonRight: keyString = @"RIGHT"; break;
+        case WebOSTVMouseButtonEnter: keyString = @"ENTER"; break;
         default:break;
     }
 
